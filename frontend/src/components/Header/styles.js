@@ -31,7 +31,7 @@ export const UserData = styled.div`
     align-items: flex-end;
     justify-content: space-between;
 
-    > button {
+    > a {
       background: none;
       border: none;
       color: rgba(255, 255, 255, 0.5);

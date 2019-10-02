@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import logo from '~/assets/logo.svg';
 
@@ -16,11 +17,13 @@ export default function Header() {
   return (
     <Container>
       <Content>
-        <img src={logo} alt="MeetApp" />
+        <Link to="/">
+          <img src={logo} alt="MeetApp" />
+        </Link>
         <UserData>
           <div>
             <strong>Gustavo Lima</strong>
-            <button type="button">Meu perfil</button>
+            <Link to="/profile">Meu perfil</Link>
           </div>
           <button type="button" onClick={handleLogout}>
             Sair
